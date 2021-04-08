@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiper Slider | 2021</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="../img/logoz.jpg" alt="logo" class="logo" />
+      <ul>
+        <li><a href="index.html">ГЛАВНАЯ</a></li>
+        <li><a href="about.html">О СЕБЕ</a></li>
+        <li><a href="main.html">СЕРТИФИКАТЫ</a></li>
+        <li><a href="contact.html">КОНТАКТЫ</a></li>
+      </ul>
+    </nav>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../img/python.png" /></div>
+        <div class="swiper-slide"><img src="../img/linux.png" /></div>
+        <div class="swiper-slide"><img src="../img/web.png" /></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+
+    <footer>
+      <div class="footer-bottom">
+        <p>Z-Company 2021 codeOpacity. designed by <span>Zein musaev</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
