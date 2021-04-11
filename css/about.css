@@ -45,7 +45,6 @@ body::after {
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    height: 400px;
     flex-wrap: wrap;
     z-index: 1;
     padding-bottom: 150px;
